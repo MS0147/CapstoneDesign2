@@ -6,7 +6,7 @@
 ## 개요
 ### 연구배경
 
-<img src="images/train_batch0"></img>
+![train_batch0](https://user-images.githubusercontent.com/57976156/205486964-818cecef-8bd4-435c-a83d-9e6c2a22e26c.jpg)
 
 반려동물을 키울때 가장 어려운 점은 혼자두고 외출이 어렵다는 점인데 이는 반려견 cctv로 해소시켜줄 수 있으나 기존 제품들을 살펴보면
 
