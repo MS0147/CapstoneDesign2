@@ -26,7 +26,6 @@
 * 해외-한국: 생태계, 기후의 차이<br>
 * 잔디밭은 물이 잘 빠지는 마사토에서 기름<br>
 * 제초제의 한계<br>
-따라서 해당 연구에서는 단순한 녹화가 아닌 반려견을 탐지하고, 행동을 분류하여 특정 행동을 언제 했는지 탐지하고, 기록하는 기능을 구현하고자 한다.
 
 #
 ### 데이터 수집
@@ -38,14 +37,14 @@
 
 ### 사용 모델 선정
 #### Yolov5s
-다음과 같이 조건을 건다
+다음과 같이 조건을 건다<br>
 * 매 프레임마다 검출할 필요가 없다
-* 저사양 기기에서도 작동해야 한다
-![204180385-84f3aca9-a5e9-43d8-a617-dda7ca12e54a](https://user-images.githubusercontent.com/57976156/205494634-abeafd17-de9d-4f1d-9628-dfcd067d08e6.png)
+* 저사양 기기에서도 작동해야 한다<br>
 ![54](https://user-images.githubusercontent.com/57976156/205495351-2fb34cf2-6542-4b15-9477-91440cc4d7bb.png)
 
 ### 학습결과
-
+![111](https://user-images.githubusercontent.com/57976156/205496562-e85ed200-639a-4a19-9fcb-b4c6122bf581.png)
+왼쪽: train data PR_CURVE / 오른쪽: validation data PR_CURVE
 
 ## 구현영상
 ![KakaoTalk_20221204_224739941](https://user-images.githubusercontent.com/57976156/205494386-20f2551d-b8e1-4a1a-bde1-29c43fa76ebd.jpg)
