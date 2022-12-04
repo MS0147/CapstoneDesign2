@@ -36,26 +36,20 @@
 * 직접 데이터 수집(동영상 촬영)<br>
 * 구글에서 이미지별 각 100~150개 수집<br>
 
-### 사용 모델
-#### Yolov5
+### 사용 모델 선정
+#### Yolov5s
+다음과 같이 조건을 건다
+* 매 프레임마다 검출할 필요가 없다
+* 저사양 기기에서도 작동해야 한다
+![204180385-84f3aca9-a5e9-43d8-a617-dda7ca12e54a](https://user-images.githubusercontent.com/57976156/205494634-abeafd17-de9d-4f1d-9628-dfcd067d08e6.png)
+![54](https://user-images.githubusercontent.com/57976156/205495351-2fb34cf2-6542-4b15-9477-91440cc4d7bb.png)
 
-![image](https://user-images.githubusercontent.com/72953874/204129399-d6973f11-36bc-41eb-b608-5932c09e65e3.png)
-
-<br>
-
-또한, 다른 yolo 버젼들과 비교하여 용량이적고 속도가 빠르다는 장점을 가지고 있다.
-
-![image](https://user-images.githubusercontent.com/72953874/204129631-19418d3f-66e3-41ba-add1-9a0bfd45d0bf.png)
-![image](https://user-images.githubusercontent.com/72953874/204129632-90e835a2-7d0b-41d3-9cbc-eeb2e8c1105d.png)
-
+### 학습결과
 
 
 ## 구현영상
-
+![KakaoTalk_20221204_224739941](https://user-images.githubusercontent.com/57976156/205494386-20f2551d-b8e1-4a1a-bde1-29c43fa76ebd.jpg)
 https://youtu.be/pJJOp0dpv8g
 
 ## References
-1. [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640)
-2. [Google Teachable Machine](https://teachablemachine.withgoogle.com/)
-3. [standard dogs Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/)
-4. [yolov4-versus-yolov5](https://blog.roboflow.com/yolov4-versus-yolov5/)
+1. YOLOv5(https://github.com/ultralytics/yolov5)
