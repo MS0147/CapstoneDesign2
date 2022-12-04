@@ -1,24 +1,25 @@
-# 
 # Capstone_Design2
 # YOLO를 이용한 잔디밭 잡초 검출
 * 경희대학교 컴퓨터공학과 김민석
+* 지도교수: 경희대학교 컴퓨터공학과 최진우
+
 
 ## 개요
-### 연구배경
+### 연구 배경
 
-![train_batch0](https://user-images.githubusercontent.com/57976156/205486964-818cecef-8bd4-435c-a83d-9e6c2a22e26c.jpg)
+![20160803_111043](https://user-images.githubusercontent.com/57976156/205490046-e41deb92-8499-4c08-b8cc-caeff7a6e6a7.jpg)
+* 은퇴인구수 증가
+* 자아실현(마당있는 단독주택에서 거주)
+* 잔디는 조경의 베이스
 
-반려동물을 키울때 가장 어려운 점은 혼자두고 외출이 어렵다는 점인데 이는 반려견 cctv로 해소시켜줄 수 있으나 기존 제품들을 살펴보면
+# 
+### 관련 연구 & 데이터
+#### 해외 농업분야 잡초검출 연구
+![41](https://user-images.githubusercontent.com/57976156/205490634-ab4ba1a5-d7a2-4210-b5de-dba9afe818f8.png)
+대규모 농사를 짓는 
 
-![image](https://user-images.githubusercontent.com/72953874/204127038-c42fc83d-f830-4860-a2ec-c0c8465602e9.png)
-
-![image](https://user-images.githubusercontent.com/72953874/204127254-d0f074ae-bfc5-4391-8583-fc3c9951bb2c.png)
-
-[펫시몬](https://play.google.com/store/apps/details?id=com.code.trakq.security)
-
-이렇게 추가 하드웨어가 필요하고, 단순한 녹화기능만 존재한다.
-
-이런 단순한 녹화로는 우리의 소중한 반려견이 밥은 먹었는지, 잠은 잘 잤는지 쉽게 확인하기가 어렵다.
+#### AI-hub 잡초 데이터셋
+![42](https://user-images.githubusercontent.com/57976156/205490730-21fe61ac-d0cb-4f95-9df0-9780e4a2c6cf.png)
 
 ### 연구의 중요성/독창성
 따라서 해당 연구에서는 단순한 녹화가 아닌 반려견을 탐지하고, 행동을 분류하여 특정 행동을 언제 했는지 탐지하고, 기록하는 기능을 구현하고자 한다.
@@ -72,6 +73,8 @@ test data는 각 행동별 25장에 데이터로 구성하였다. 학습결과 0
 3. 추가기능 
 
 여러마리의 반려견이 등장할 경우, 각각의 반려견의 이름을 구별해주는 기능을 구현하려고 시도해보았다. 예를들어, 허스키와 말티즈의 경우 특징이 서로 뚜렷하기때문에 조금의 데이터만 사용자에게 받아도 구분이 가능할 것이라고 생각하여 사용자에게 이미지를 받아 아래의 모델로 학습하고, 구분하도록 해보았다.
+
+![train_batch0](https://user-images.githubusercontent.com/57976156/205486964-818cecef-8bd4-435c-a83d-9e6c2a22e26c.jpg)
 
 ``` python
 model = Sequential([
