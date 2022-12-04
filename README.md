@@ -9,28 +9,36 @@
 
 ![20160803_111043](https://user-images.githubusercontent.com/57976156/205490046-e41deb92-8499-4c08-b8cc-caeff7a6e6a7.jpg)
 * 은퇴인구수 증가
+
 * 자아실현(마당있는 단독주택에서 거주)
+
 * 잔디는 조경의 베이스
 
 # 
 ### 관련 연구 & 데이터
 #### 해외 농업분야 잡초검출 연구
 ![41](https://user-images.githubusercontent.com/57976156/205490634-ab4ba1a5-d7a2-4210-b5de-dba9afe818f8.png)
-대규모 농사를 짓는 
+
+대규모 농사를 짓는 미국, 호주 등 국가에서는 농지 잡초 검출 연구가 이미 활발히 진행되고 있음
 
 #### AI-hub 잡초 데이터셋
 ![42](https://user-images.githubusercontent.com/57976156/205490730-21fe61ac-d0cb-4f95-9df0-9780e4a2c6cf.png)
 
-### 연구의 중요성/독창성
+### 연구의 중요성
+* 해외-한국: 생태계, 기후의 차이
+
+* 잔디밭은 물이 잘 빠지는 마사토에서 기름
+
+* 제초제의 한계
 따라서 해당 연구에서는 단순한 녹화가 아닌 반려견을 탐지하고, 행동을 분류하여 특정 행동을 언제 했는지 탐지하고, 기록하는 기능을 구현하고자 한다.
 
-### 관련연구
-
-1. Yolov5
+# 
+### 사용 모델
+#### Yolov5
 
 ![image](https://user-images.githubusercontent.com/72953874/204129399-d6973f11-36bc-41eb-b608-5932c09e65e3.png)
 
-Object detection의 1-stage detector로 2-stage detector보다 정확도는 낮지만 FPS가 높아 실시간 cctv를 처리하는 해당 연구에 적합하다. 또한 Yolov5는 pytorch기반으로 작성되어 쉽게 사용할 수 있다.<br>
+<br>
 
 또한, 다른 yolo 버젼들과 비교하여 용량이적고 속도가 빠르다는 장점을 가지고 있다.
 
